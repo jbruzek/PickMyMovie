@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2" >
+
+        <TextView
+            android:id="@+id/mTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Pick A Movie For Me!"
+            android:textAppearance="@style/LargeText"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/mGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mTitle"
+            android:layout_centerHorizontal="true"
+            android:text="Movie Genre"
+            android:textAppearance="@style/SmallText" />
+
+        <TextView
+            android:id="@+id/mRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mGenre"
+            android:layout_centerHorizontal="true"
+            android:text="Small Text"
+            android:textAppearance="@style/SmallText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" >
+
+        <ImageView
+            android:id="@+id/mImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+            android:id="@+id/justSomeEmptySpace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/addinglayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/mRemove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.5" />
+
+            <TextView
+                android:id="@+id/mRemoveLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Delete Movie"
+                android:textAppearance="@style/MediumText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/justEmptySpace"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+</LinearLayout>

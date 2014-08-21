@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" />
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" >
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Pick A Movie For Me!"
+            android:textAppearance="@style/LargeText"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/movieGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieTitle"
+            android:layout_centerHorizontal="true"
+            android:text="Movie Genre"
+            android:textAppearance="@style/SmallText" />
+
+        <TextView
+            android:id="@+id/movieNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieGenre"
+            android:layout_centerHorizontal="true"
+            android:text="Small Text"
+            android:textAppearance="@style/SmallText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"  />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/genreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="genre"
+            android:textAppearance="@style/SmallText" />
+
+        <Spinner
+            android:id="@+id/genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genreText"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.5"
+            android:entries="@array/spinnerItems" />
+
+        <RelativeLayout
+            android:id="@+id/addinglayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/addMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.5" />
+
+            <TextView
+                android:id="@+id/addMovieButtonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="My Movies"
+                android:textAppearance="@style/MediumText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pickerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/addinglayout" >
+
+            <Button
+                android:id="@+id/pick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.5" />
+
+            <TextView
+                android:id="@+id/pickButtonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Pick A Movie For Me!"
+                android:textAppearance="@style/MediumText" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

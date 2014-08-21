@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>No Preference</item>
+        <item>Action</item>
+        <item>Comedy</item>
+        <item>Drama</item>
+        <item>Romantic Comedy</item>
+    </string-array>
+</resources>
